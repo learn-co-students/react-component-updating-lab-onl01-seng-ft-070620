@@ -14,6 +14,7 @@ class Timer extends Component {
     this.timer.current.style.color = "#" + Math.floor(Math.random() * 16777215).toString(16);
   }
 
+  // Not needed if utilizing PureComponent instead of Component:
   shouldComponentUpdate(nextProps, nextState) {
     if (this.state.time === nextState.time) {
       return false
