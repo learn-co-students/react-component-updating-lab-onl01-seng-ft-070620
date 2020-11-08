@@ -10,7 +10,18 @@ class Timer extends Component {
     };
   }
 
-  //Your code here
+  // changing timer text color ea time component updates
+  componentDidUpdate() {
+    this.timer.current.style.color = "#" + Math.floor(Math.random() * 16777215).toString(16)
+  }
+
+  // preventing unnecessary updates caused by App's state changes
+  shouldComponentUpdate(nextProps, nextState) {
+    if (this.state.time === nextState.time) {
+      return false
+    }
+    return true
+  }
 
   componentDidMount() {
     this.interval = setInterval(
