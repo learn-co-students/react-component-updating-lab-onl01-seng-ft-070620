@@ -6,7 +6,7 @@
 2. Briefly introduce React Refs and their role in the component lifecycle
 3. Practice using `shouldComponentUpdate` and `componentDidUpdate`.
 
-## Overview
+## Overview 
 
 In a previous lab, we worked on an app, _MultiTimer_, the solution to all of our
 needs involving multiple timers. Well, sort of. It only really worked for 1
